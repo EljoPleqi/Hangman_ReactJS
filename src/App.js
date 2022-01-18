@@ -22,7 +22,11 @@ function App() {
       const { key, keyCode } = e;
 
       if (playable && keyCode >= 65 && keyCode <= 90) {
+<<<<<<< HEAD
         const letter = key.toUpperCase();
+=======
+        const letter = key.toLowerCase();
+>>>>>>> master
 
         if (word.includes(letter)) {
           if (!correctLetters.includes(letter)) {
@@ -54,7 +58,11 @@ function App() {
 
   return (
     <div className={`container container-bg-${darkMode ? 'dark' : 'light'}`}>
+<<<<<<< HEAD
       <Header setDarkMode={setDarkModeHandle} darkMode={darkMode} />
+=======
+      <Header setDarkMode={setDarkModeHandle} />
+>>>>>>> master
       <div className="game-container">
         <Figure wrongLetters={wrongLetters} darkMode={darkMode} />
         <WrongLetters wrongLetters={wrongLetters} />

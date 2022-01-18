@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import './toggleButton.css';
 
 const DarkMode = ({ darkMode, setDarkMode }) => {
@@ -9,6 +10,14 @@ const DarkMode = ({ darkMode, setDarkMode }) => {
         <input type="checkbox" onChange={setDarkMode} />
         <span className="slider" />
       </label>
+=======
+
+const DarkMode = ({ setDarkMode }) => {
+  return (
+    <div>
+      <button onClick={setDarkMode}>Dark Mode</button>
+      <input type="checkbox" />
+>>>>>>> master
     </div>
   );
 };
