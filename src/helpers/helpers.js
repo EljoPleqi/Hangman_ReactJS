@@ -6,16 +6,13 @@ export function showNotification(setter) {
   }, 2000);
 }
 
-export function checkWin(correctLetters, wrongLetters, word) {
+export function getGameStatus(correctLetters, wrongLetters, word) {
   let status = 'win';
 
   // Check condition
-  word.split('').forEach((letter) => {
-    if (!correctLetters.includes(letter)) {
-      status = '';
-    }
-  });
-
+  if (word.split('').some((letter) => !correctLetters.includes(letter))) {
+    status = '';
+  }
   if (wrongLetters.length >= 7) status = 'lose';
 
   return status;
