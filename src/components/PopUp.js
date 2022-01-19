@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react';
-<<<<<<< HEAD
-import { checkWin } from '../helpers/helpers';
-=======
 import { getGameStatus } from '../helpers/helpers';
->>>>>>> master
 
 const PopUp = ({
   playAgain,
@@ -16,17 +12,13 @@ const PopUp = ({
   let showWord = '';
   let playable = true;
 
-<<<<<<< HEAD
-  if (checkWin(correctLetters, wrongLetters, word) === 'win') {
-    finalMessage = ' Wow! You won';
-    playable = false;
-  } else if (checkWin(correctLetters, wrongLetters, word) === 'lose') {
-=======
-  if (getGameStatus(correctLetters, wrongLetters, word) === 'win') {
+  if (
+    getGameStatus(correctLetters, wrongLetters, word) === 'win' &&
+    correctLetters.length > 0
+  ) {
     finalMessage = ' Wow! You won';
     playable = false;
   } else if (getGameStatus(correctLetters, wrongLetters, word) === 'lose') {
->>>>>>> master
     finalMessage = ' Nope, sorry you lost';
     showWord = `The answer is ${word}`;
     playable = false;

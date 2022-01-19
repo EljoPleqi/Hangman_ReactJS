@@ -10,10 +10,7 @@
   height: 100vh;
   margin: 0;
   overflow: hidden;
-<<<<<<< HEAD
   transition: 400ms;
-=======
->>>>>>> master
 }
 
 h1 {
@@ -32,10 +29,7 @@ h1 {
   fill: transparent;
   stroke-width: 4px;
   stroke-linecap: round;
-<<<<<<< HEAD
   transition: 400ms;
-=======
->>>>>>> master
 }
 
 .figure-part {
@@ -62,17 +56,12 @@ h1 {
 .word {
   display: flex;
   position: absolute;
-<<<<<<< HEAD
-  /* margin-top: 150px; */
-=======
->>>>>>> master
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .letter {
-<<<<<<< HEAD
   display: inline-flex;
   font-size: 30px;
   font-weight: 700;
@@ -81,16 +70,6 @@ h1 {
   margin: 0 10px;
   height: 50px;
   width: 50px;
-=======
-  border-bottom: 3px solid #2980b9;
-  display: inline-flex;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 3px;
-  height: 50px;
-  width: 20px;
->>>>>>> master
 }
 
 .popup-container {
@@ -160,13 +139,10 @@ h1 {
   stroke: #333;
 }
 
-<<<<<<< HEAD
 .letter-light {
   border-bottom: 3px solid #333;
 }
 
-=======
->>>>>>> master
 /* dark mode */
 
 .figure-dark {
@@ -174,7 +150,6 @@ h1 {
 }
 
 .container-bg-dark {
-<<<<<<< HEAD
   background-color: #333;
   color: #fff;
 }
@@ -182,8 +157,3 @@ h1 {
 .letter-dark {
   border-bottom: 3px solid #fff;
 }
-=======
-  background-color: #34495e;
-  color: #fff;
-}
->>>>>>> master
